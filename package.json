@@ -6,7 +6,6 @@
     "concurrently": "^3.5.1",
     "config": "^1.29.1",
     "excel": "^0.1.7",
-    "express": "^4.16.2",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.0",
     "react-dom": "^16.2.0",
