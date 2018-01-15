@@ -2,7 +2,7 @@
 Team Member of the Week
 
 ### The Product
-This is a web app designed to display who is currently the team member of the week. The site is designed to run on a tv next to the team areas and display who is the current team member of the week for every team.
+This is a web app designed to display who is currently the team member of the week. Every week we vote for who is the next team member of the week. The site is designed to run on a tv next to each of the team work areas and display who is the current team member of the week for every team.
 
 ### The Problem
 This is a somewhat unique app, because I needed a to run a website without having to bother corporate IT. Asking IT to allow us to run a little internal website was out of the question.
