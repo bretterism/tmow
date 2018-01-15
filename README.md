@@ -16,7 +16,7 @@ The app reads an Excel spreadsheet to read who is the current TMOW. This Excel s
 ### The Technology
 This was a rapid development app that was built in one sitting, about 4 hours. The backend is built using Node.js, which watches for updates on the Excel spreadsheet. Once the spreadsheet is updated, the backend emits an event using web sockets (socket.io) to the frontend. The frontend, built on React, is able to render those changes as soon as they are received.
 
-### Setup
+### The Setup
 **Disclaimer:**  Although this app *should* work across most operating systems, it was designed for Windows (that's the OS on each laptop). I haven't tested it on other operating systems so if it doesn't work out of the box, you may have to do some tweaking.
 
 1. Update config/default.json with your own information. The most important part being the filepath to your Excel spreadsheet.
