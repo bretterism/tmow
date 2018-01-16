@@ -5,7 +5,7 @@ Team Member of the Week
 This is a web app designed to display who is currently the team member of the week (TMOW). Every week we vote for who is the next TMOW. The site is designed to run on a tv next to each of the team work areas and display who is the current TMOW for every team.
 
 ### The Problem
-This is a somewhat unique app, because I needed a to create a website without having to bother corporate IT. Asking IT to allow us to run a little hosted website was out of the question.
+This is a somewhat unique app, because I needed a to create a website without having to bother corporate IT. Asking IT to allow us to run a little hosted website was out of the question. I'm also a little frugal and didn't want to spin up a server to host this app. Why pay money when there's a perfectly good solution that's free?
 
 ### The Solution
 Since we cannot create new websites on the network, this app is designed to run on a local machine. Every TV has a laptop attached to it in order to display team information (dashboards, metrics, etc). With each tv running the app locally, an Excel spreadsheet is used to sync data across all the TVs in the office.
