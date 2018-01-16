@@ -8,9 +8,9 @@ This is a web app designed to display who is currently the team member of the we
 This is a somewhat unique app, because I needed a to create a website without having to bother corporate IT. Asking IT to allow us to run a little internal website was out of the question.
 
 ### The Solution
-This app is designed to run on a local machine. Every TV has a laptop attached to it in order to display team information (dashboards, metrics, etc). This app runs locally on every laptop attached to a TV.
+Since we cannot create new internal websites, this app is designed to run on a local machine. Every TV has a laptop attached to it in order to display team information (dashboards, metrics, etc). With each tv running the app locally, an Excel spreadsheet is used to sync data across all the TVs in the office.
 
-The app reads an Excel spreadsheet to read who is the current TMOW. This Excel sheet is hosted in the cloud, which is automatically synced to each laptop. Once the spreadsheet is updated, the changes go out to each laptop and the web page is updated with the new information.
+This Excel sheet is hosted in the cloud, which is automatically synced to each laptop. Once the spreadsheet is updated, the changes go out to each laptop and the web page is updated with the new information.
 ![alt text](https://github.com/bretterism/tmow/blob/master/img/tmow-diagram.png "TMOW Diagram")
 
 ### The Technology
