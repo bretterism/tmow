@@ -21,12 +21,16 @@ const Tmow = (props) => {
 }
 
 
-
 Tmow.propTypes = {
 	teamName: PropTypes.string.isRequired,
 	imgUrl: PropTypes.string,
 	fullName: PropTypes.string.isRequired,
 	teamColor: PropTypes.string
+}
+
+const defaultImgUrl = 'img/default-avatar.png';
+Tmow.defaultProps = {
+	imgUrl: defaultImgUrl
 }
 
 export default Tmow;

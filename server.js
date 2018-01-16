@@ -70,8 +70,13 @@ const parseUsers = (teams, callback) => {
 		}
 
 		teams.map((team) => {
-			team.imgUrl = extract.find(i => team.fullName === i.fullName).imgUrl
-
+			const user = extract.find(i => team.fullName === i.fullName);
+			if (user) {
+				if (user.hasOwnProperty('imgUrl')) {
+					team.imgUrl = user.imgUrl;
+				}	
+			}
+			
 			return team;
 		});
 
