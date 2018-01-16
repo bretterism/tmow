@@ -21,12 +21,7 @@ class App extends Component {
 
   render() {
     const teamMembers = this.state.teams.map((team) => {
-      let img = defaultImgUrl;
-      if (team.imgUrl !== '') {
-        img = team.imgUrl
-      }
-
-      return <Col md={6}><Tmow teamName={team.teamName} fullName={team.fullName} imgUrl={img} teamColor={team.teamColor}/></Col>;
+      return <Col md={6}><Tmow teamName={team.teamName} fullName={team.fullName} imgUrl={ team.imgUrl || defaultImgUrl } teamColor={team.teamColor}/></Col>;
     });
 
     return (
