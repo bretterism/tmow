@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Panel, Col, Image } from 'react-bootstrap';
+import { Panel, Col, Row, Image } from 'react-bootstrap';
 
 const Tmow = (props) => {
 	return (
@@ -9,12 +9,12 @@ const Tmow = (props) => {
 				<h1 style={{textAlign: 'center', fontSize: '300%'}}><strong>{props.teamName}</strong></h1>
 			</Panel.Heading>
 			<Panel.Body style={{backgroundColor: '#fcfcfc'}}>
-				<Col md={4} style={{height: '100px'}}>
-					<Image src={props.imgUrl} thumbnail style={{maxHeight: '100%', maxWidth: '100%'}} />
-				</Col>
-				<Col md={8}>
-					<h1>{props.fullName}</h1>
-				</Col>
+				<Row>
+					<h1 style={{ textAlign: 'center' }}>{props.fullName}</h1>
+				</Row>
+				<Row style={{ maxHeight: '250px'}}>
+					<Image src={props.imgUrl} thumbnail style={{ maxHeight: '250px', display: 'block', margin: '0 auto'}} />
+				</Row>
 			</Panel.Body>
 		</Panel>
 	);
