@@ -4,7 +4,7 @@ import { Panel, Col, Row, Image } from 'react-bootstrap';
 
 const Tmow = (props) => {
 	return (
-		<Panel style={{margin: '25px'}}>
+		<Panel style={{margin: '10px'}}>
 			<Panel.Heading style={{backgroundColor: props.teamColor}}>
 				<h1 style={{textAlign: 'center', fontSize: '300%'}}><strong>{props.teamName}</strong></h1>
 			</Panel.Heading>
