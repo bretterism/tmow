@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Panel, Col, Row, Image } from 'react-bootstrap';
+import { PageHeader, Panel, Col, Row, Image } from 'react-bootstrap';
+
+import api from './api';
 
 const Tmow = (props) => {
 	return (
@@ -33,4 +35,33 @@ Tmow.defaultProps = {
 	imgUrl: defaultImgUrl
 }
 
-export default Tmow;
+class TmowConatiner extends React.Component {
+	constructor(props) {
+    super(props);
+
+    this.state = {
+      teams: []
+    }
+
+    this.defaultImgUrl = 'img/default-avatar.png';
+
+    api.subscribe((data) => {
+      this.setState({ teams: data });
+    });
+  }
+
+  render() {
+    const teamMembers = this.state.teams.map((team) => {
+      return <Col md={4}><Tmow teamName={team.teamName} fullName={team.fullName} imgUrl={ team.imgUrl || this.defaultImgUrl } teamColor={team.teamColor}/></Col>;
+    });
+
+    return (
+      <div>
+        <PageHeader style={{textAlign: 'center'}}>Team Members of the Week!</PageHeader>
+        <Row>{ teamMembers }</Row>
+      </div>
+    );
+  }
+}
+
+export default TmowConatiner;
